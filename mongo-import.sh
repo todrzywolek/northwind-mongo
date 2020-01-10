@@ -3,5 +3,9 @@ do
     filename=$(basename "$f")
     extension="${filename##*.}"
     filename="${filename%.*}"
-    mongoimport -d Northwind -c "$filename" --type csv --file "$f" --headerline
+    cat $f | tr -d \" > ${f}.tmp
+    rm $f
+    mv ${f}.tmp $f
+    echo $f
+    mongoimport -d northwind -c "$filename" --type csv --file "$f" --headerline
 done
