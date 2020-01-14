@@ -1,0 +1,5 @@
+OrderID.int32()
+ProductID.int32()
+UnitPrice.decimal()
+Quantity.int32()
+Discount.decimal()

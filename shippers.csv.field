@@ -1,0 +1,3 @@
+_id.int32()
+CompanyName.string()
+Phone.string()

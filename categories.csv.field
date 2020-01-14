@@ -1,0 +1,4 @@
+_id.int32()
+CategoryName.string()
+Description.string()
+Picture.binary(hex)

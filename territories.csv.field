@@ -1,0 +1,3 @@
+_id.int32()
+TerritoryDescription.string()
+RegionID.int32()
